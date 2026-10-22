@@ -1,0 +1,107 @@
+{
+  "ctor": {
+    "params": [
+      [
+        "project",
+        "string"
+      ],
+      [
+        "currency",
+        "string"
+      ],
+      [
+        "funder_a",
+        "string"
+      ],
+      [
+        "funder_b",
+        "string"
+      ]
+    ],
+    "kwparams": {}
+  },
+  "methods": {
+    "activate_cost": {
+      "params": [
+        [
+          "proposal_id",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "any",
+      "payable": false
+    },
+    "approve_cost": {
+      "params": [
+        [
+          "proposal_id",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "any",
+      "payable": false
+    },
+    "propose_cost": {
+      "params": [
+        [
+          "description",
+          "string"
+        ],
+        [
+          "evidence",
+          "string"
+        ],
+        [
+          "cap",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "any",
+      "payable": false
+    },
+    "release": {
+      "params": [
+        [
+          "reservation_id",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "any",
+      "payable": false
+    },
+    "reserve": {
+      "params": [
+        [
+          "cost_id",
+          "int"
+        ],
+        [
+          "amount",
+          "int"
+        ],
+        [
+          "reference",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "any",
+      "payable": false
+    },
+    "snapshot": {
+      "params": [],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    }
+  }
+}

@@ -14,3 +14,4 @@ jobs:
       - run: python -m pip install -r requirements-dev.txt
       - run: pytest tests/direct -q
       - run: genvm-lint check contracts/grant_overlap.py
+      - run: genvm-lint check contracts/grant_overlap_v2.py
