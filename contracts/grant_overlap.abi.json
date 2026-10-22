@@ -1,0 +1,79 @@
+{
+  "ctor": {
+    "params": [
+      [
+        "project",
+        "string"
+      ],
+      [
+        "currency",
+        "string"
+      ]
+    ],
+    "kwparams": {}
+  },
+  "methods": {
+    "register_cost": {
+      "params": [
+        [
+          "description",
+          "string"
+        ],
+        [
+          "evidence",
+          "string"
+        ],
+        [
+          "cap",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "any",
+      "payable": false
+    },
+    "release": {
+      "params": [
+        [
+          "reservation_id",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "any",
+      "payable": false
+    },
+    "reserve": {
+      "params": [
+        [
+          "cost_id",
+          "int"
+        ],
+        [
+          "funding_source",
+          "string"
+        ],
+        [
+          "amount",
+          "int"
+        ],
+        [
+          "reference",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "any",
+      "payable": false
+    },
+    "snapshot": {
+      "params": [],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    }
+  }
+}
