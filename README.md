@@ -2,6 +2,14 @@
 
 A GenLayer Intelligent Contract for one project's co-funded expenses. It compares candidate expenses against the registered ledger by meaning, rejects duplicates or uncertainty, and enforces deterministic reservation ceilings.
 
+## Application and public deployment
+
+[GrantWeave application](https://chuanqili77.github.io/grantweave-genlayer/) · [Application source](https://github.com/chuanqili77/grantweave-genlayer)
+
+Studio Network `61999` contract: `0x87cB0341BDd533338e00A9E7F29dDd0396857A27`. Deployment transaction: `0x52695c83f1e9ce7b6db1318ff06ed8a3a218d53d96e10b42292ddb301da9758b`. The public instance uses a dedicated test registrar. Each new project can deploy a separate instance with its own registrar.
+
+[Network verification evidence](https://github.com/chuanqili77/grantweave-genlayer/blob/main/public/studionet-verification.json) records the zero-value test calls, validator votes and state before and after each operation.
+
 ## State and authority
 
 The deployer is the project registrar. Only that wallet may register costs, reserve capacity or release reservations; everyone can read `snapshot()`. This is a transparent registrar-controlled register, not a trustless invoice verifier. A dishonest registrar can omit expenses or supply false evidence. Different deployments do not discover each other's funding.
