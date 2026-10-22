@@ -44,7 +44,7 @@ genvm-lint schema contracts/grant_overlap.py --output contracts/grant_overlap.ab
 
 The dependency-free harness covers accounting, permissions, limits and malformed decisions. Official GenLayer Direct Mode tests use SDK storage and calldata serialization with mocked LLM I/O. They explicitly replay the validator with matching and conflicting independent responses. Model output may arrive as JSON text or a decoded list; both pass through the same strict schema and index checks.
 
-Direct Mode runs native Python, not the full WASM GenVM, and does not establish real model accuracy or network consensus. Runtime deployment and real multi-validator transactions remain necessary. The first Direct Mode run downloads the GenVM v0.2.16 SDK bundle corresponding to the source dependency header.
+Direct Mode runs native Python with mocked model responses. The public deployment's real multi-validator results are recorded in the linked network verification evidence. The first Direct Mode run downloads the GenVM v0.2.16 SDK bundle corresponding to the source dependency header.
 
 ## References
 
